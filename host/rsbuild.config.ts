@@ -8,7 +8,8 @@ export default defineConfig({
     options: {
       name: 'host',
       remotes: {
-        products: 'Products@http://localhost:3001/remoteEntry.js',
+        products: 'products@http://localhost:3001/remoteEntry.js',
+        cart: 'cart@http://localhost:3002/remoteEntry.js'
       },
     },
   },

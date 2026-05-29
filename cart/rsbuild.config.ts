@@ -5,14 +5,14 @@ import { pluginReact } from '@rsbuild/plugin-react';
 export default defineConfig({
   plugins: [pluginReact()],
   server: {
-    port: 3001
+    port: 3002
   },
   moduleFederation: {
-    options:{
-      name: "products",
+    options: {
+      name: "cart",
       filename: 'remoteEntry.js',
-      exposes:{
-        './ProductPage': './src/ProductPage'
+      exposes: {
+        './CartPage': './src/CartPage'
       },
     }
   }

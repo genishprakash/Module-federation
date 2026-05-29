@@ -9,16 +9,3 @@ declare module '*.svg?react' {
   const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   export default ReactComponent;
 }
-
-declare module 'products/*' {
-  import type React from 'react';
-  const Component: React.ComponentType<any>;
-  export default Component;
-}
-
-declare module 'cart/*' {
-  import type React from 'react';
-  const Component: React.ComponentType<any>;
-  export default Component;
-}
-  
