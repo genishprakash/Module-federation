@@ -14,9 +14,11 @@ export default defineConfig({
       shared: {
         react: {
           singleton: true,
+          requiredVersion: '^19.2.6',
         },
         'react-dom': {
           singleton: true,
+          requiredVersion: '^19.2.6',
         },
       },
     },
