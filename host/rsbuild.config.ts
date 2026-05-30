@@ -11,6 +11,14 @@ export default defineConfig({
         products: 'products@http://localhost:3001/remoteEntry.js',
         cart: 'cart@http://localhost:3002/remoteEntry.js'
       },
+      shared: {
+        react: {
+          singleton: true,
+        },
+        'react-dom': {
+          singleton: true,
+        },
+      },
     },
   },
 });

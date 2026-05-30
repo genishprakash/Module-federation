@@ -14,6 +14,14 @@ export default defineConfig({
       exposes:{
         './ProductPage': './src/ProductPage'
       },
+      shared: {
+        react: {
+          singleton: true,
+        },
+        'react-dom': {
+          singleton: true,
+        },
+      },
     }
   }
 });

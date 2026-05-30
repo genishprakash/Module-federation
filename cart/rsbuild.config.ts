@@ -14,6 +14,14 @@ export default defineConfig({
       exposes: {
         './CartPage': './src/CartPage'
       },
+      shared: {
+        react: {
+          singleton: true,
+        },
+        'react-dom': {
+          singleton: true,
+        },
+      },
     }
   }
 });
